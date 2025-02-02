@@ -11,22 +11,22 @@ Dane użyte do określenia temperatury w oknach to temperatury.txt, zostały wyg
 
 W pliku pipeline.ipynb znajduje się notatnik, w którym zostały przeprowadzone obliczenia. Tworzymy klasę Room opisującą pokój, nadajemy jej parametry związane z jego rozmiarem, umiejscowieniem drzwi, okien i grzejników a także tworzymy tam macierz temperetur w zależności od czasu. Klasa ta posiada funkcję laplasjan(), tworzącą nam odpowiednią macierz Laplace'a do obliczeń a także funkcję update(), która aktualizuje nam macierz temperatury w kolejnym kroku czasowym. Drugą klasą jest Apartment, czyli klasa opisująca nam całe mieszkania. Zawiera ona pokoje, czyli elementy klasy Room. Jest tam funkcja merge(), która pozwala nam na łączenie poszczególnych macierzy ciepła dla pokoi w macierz dla całego mieszkania. Rezultaty obliczeń wyświetlamy jako animowaną mapę ciepła. 
 
-Plik requirements.txt umożliwia automatyczne zaistalowanie paczek potrzebnych do odtworzenia obliczeń.
+Plik requirements.txt umożliwia automatyczne zaistalowanie paczek potrzebnych do odtworzenia obliczeń po wpisaniu w terminal pip install -r requirements.txt.
 
 ## Wizualizacje
 Rozważając temperaturę na poziomie "chłodno" otrzymujemy następujące mapy ewolucji ciepła w zależności od ustawienia grzejników pod oknami lub na przeciwległych ścianach:
 
-![Wykres temperatury](animacja.gif)
-![Wykres temperatury](animacja4.gif)
+![Wykres temperatury](chlodno_okna.gif)
+![Wykres temperatury](chlodno_sciany.gif)
 
 Biorąc pod uwagę poziom temperatury "zimno", wygląda to następująco:
 
-![Wykres temperatury](animacja2.gif)
-![Wykres temperatury](animacja5.gif)
+![Wykres temperatury](zimno_okna.gif)
+![Wykres temperatury](zimno_sciany.gif)
 
 Natomiast na poziomie "bardzo zimno":
 
-![Wykres temperatury](animacja3.gif)
-![Wykres temperatury](animacja6.gif)
+![Wykres temperatury](bardzo_zimno_okna.gif)
+![Wykres temperatury](bardzo_zimno_sciany.gif)
 
 
